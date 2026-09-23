@@ -1,7 +1,7 @@
 <script lang="ts">
   import Parallax from './Parallax.svelte'
   import Reveal from './Reveal.svelte'
-  import { name, role, coordinates } from '../content'
+  import { name, role } from '../content'
 </script>
 
 <header class="hero" id="top">
@@ -13,9 +13,6 @@
   </div>
 
   <div class="hero-inner">
-    <Reveal y={40}>
-      <p class="eyebrow hero-eyebrow">{coordinates}</p>
-    </Reveal>
     <Reveal delay={120} y={60}>
       <h1 class="display hero-name">{name}</h1>
     </Reveal>
