@@ -1,7 +1,5 @@
 # Dan — Portfolio
 
-Minimalist, parallax-heavy personal portfolio / contact site. Replaces dandotjs.com.
-
 ## Stack
 
 - **Svelte 5** (runes) + **Vite 8** + **TypeScript** — no SvelteKit (single-page static site)
@@ -34,10 +32,6 @@ npx @sveltejs/mcp svelte-autofixer src/lib/components/<File>.svelte
 Edit `src/lib/content.ts` — name, summary, jobs, technologies, LinkedIn, email.
 
 > **TODO before launch:** confirm `linkedin` URL and `email` in `src/lib/content.ts` (currently `in/dandotjs` placeholder, email empty/hidden).
-
-## Deploy
-
-Static `dist/` — host free on Cloudflare Pages / GitHub Pages / Netlify. Point `dandotjs.com` DNS at it.
 
 ## Structure
 
