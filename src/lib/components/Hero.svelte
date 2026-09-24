@@ -5,11 +5,12 @@
 </script>
 
 <header class="hero" id="top">
-  <!-- layered parallax backdrop -->
+  <!-- layered parallax backdrop: full-bleed photo -->
   <div class="layers" aria-hidden="true">
-    <Parallax speed={-0.18} class="layer layer-a"><div class="blob blob-a"></div></Parallax>
-    <Parallax speed={0.32} class="layer layer-b"><div class="blob blob-b"></div></Parallax>
-    <Parallax speed={0.6} class="layer layer-c"><div class="blob blob-c"></div></Parallax>
+    <Parallax speed={0.35} class="layer layer-bg">
+      <img class="hero-bg" src="/img/hero-background.jpg" alt="" fetchpriority="high" />
+      <div class="hero-scrim"></div>
+    </Parallax>
   </div>
 
   <div class="hero-inner">
@@ -47,34 +48,27 @@
     position: absolute;
     inset: 0;
   }
-
-  .blob {
+  /* photo layer is taller than the hero so parallax translate never exposes a gap */
+  .layers :global(.layer-bg) {
+    inset: -42vh 0;
+  }
+  .hero-bg {
     position: absolute;
-    border-radius: 50%;
-    filter: blur(70px);
-    opacity: 0.5;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* slight upward bias: keeps the lit angular edge + blue sky in frame */
+    object-position: 50% 40%;
   }
-  .blob-a {
-    width: 46vw;
-    height: 46vw;
-    right: -12vw;
-    top: -10vw;
-    background: radial-gradient(circle at 30% 30%, rgba(0, 229, 229, 0.35), transparent 65%);
-  }
-  .blob-b {
-    width: 40vw;
-    height: 40vw;
-    left: -14vw;
-    bottom: -12vw;
-    background: radial-gradient(circle at 60% 60%, rgba(255, 77, 216, 0.28), transparent 65%);
-  }
-  .blob-c {
-    width: 30vw;
-    height: 30vw;
-    left: 30vw;
-    top: 20vh;
-    background: radial-gradient(circle at 50% 50%, rgba(43, 46, 51, 0.9), transparent 70%);
-    filter: blur(50px);
+  /* dark scrim tuned for a bright architectural photo: heavier behind the
+     left-aligned text, lighter over the sky, strong bottom fade into #000 */
+  .hero-scrim {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.12) 52%, rgba(0, 0, 0, 0.34) 100%),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.24) 45%, rgba(0, 0, 0, 0.78) 100%);
   }
 
   .hero-inner {
