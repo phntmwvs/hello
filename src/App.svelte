@@ -4,7 +4,7 @@
   import Experience from './lib/components/Experience.svelte'
   import Tech from './lib/components/Tech.svelte'
   import Footer from './lib/components/Footer.svelte'
-  import { name } from './lib/content'
+  import { name, shortName } from './lib/content'
 
   let scrolled = $state(false)
   const onScroll = () => (scrolled = window.scrollY > 40)
@@ -13,7 +13,7 @@
 <svelte:window onscroll={onScroll} />
 
 <nav class="nav" class:scrolled aria-label="Primary">
-  <a href="#top" class="brand display">{name}</a>
+  <a href="#top" class="brand display">{shortName}</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>

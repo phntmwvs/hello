@@ -8,12 +8,13 @@ export interface Job {
   tech: string[]
 }
 
-export const name = 'Dan'
+export const name = 'Daniel'
+export const shortName = 'DG'
 export const role = 'Full-Stack Software Engineer'
 export const location = 'Remote · USA'
 
 export const summary =
-  "Hi, I'm Dan. I'm a full-stack software engineer who is extremely passionate about making impactful software that helps people. I stay up to date with the latest trends and best practices in the JavaScript/TypeScript world — and when I'm not building, I'm writing and listening to music, watching films, playing games, and hanging out with my wife and cats."
+  "Hi, I'm Daniel. I'm a full-stack software engineer who is extremely passionate about making impactful software that helps people. I stay up to date with the latest trends and best practices in the JavaScript/TypeScript world — and when I'm not building, I'm writing and listening to music, watching films, playing games, and hanging out with my wife and cats."
 
 export const linkedin = 'https://www.linkedin.com/in/dandotjs' // TODO: confirm handle
 export const email = '' // TODO: confirm contact email

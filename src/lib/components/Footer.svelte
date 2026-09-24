@@ -7,6 +7,10 @@
 </script>
 
 <footer class="footer" id="contact" aria-labelledby="contact-heading">
+  <div class="bg-par" aria-hidden="true">
+    <img class="bg" src="/img/contact-background.jpg" alt="" />
+    <div class="bg-scrim"></div>
+  </div>
   <div class="inner">
     <Reveal>
       <p class="eyebrow" id="contact-heading">Contact</p>
@@ -19,7 +23,7 @@
           href={linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Connect with Dan on LinkedIn"
+          aria-label="Connect with Daniel on LinkedIn"
         >
           Get in touch
           <span class="arrow" aria-hidden="true">→</span>
@@ -43,7 +47,7 @@
     </Reveal>
 
     <div class="baseline">
-      <p class="muted">© {year} Dan</p>
+      <p class="muted">© {year} daniel g</p>
       <a href="#top" class="eyebrow top">Back to top ↑</a>
     </div>
   </div>
@@ -51,10 +55,33 @@
 
 <style>
   .footer {
+    position: relative;
     padding: var(--section-gap) var(--gutter) 3rem;
     border-top: 1px solid var(--line);
+    overflow: hidden;
+  }
+  .bg-par {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .bg-scrim {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.45) 18%, rgba(0, 0, 0, 0.45) 82%, #000 100%),
+      radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45));
   }
   .inner {
+    position: relative;
+    z-index: 1;
     max-width: var(--maxw);
     margin: 0 auto;
   }
