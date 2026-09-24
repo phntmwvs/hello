@@ -25,6 +25,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      # keep the custom domain file in the deployed artifact
+      - run: cp CNAME dist/CNAME
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
