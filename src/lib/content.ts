@@ -14,7 +14,7 @@ export const role = 'Full-Stack Software Engineer'
 export const location = 'Remote · USA'
 
 export const summary =
-  "Hi, I'm Daniel. I'm a full-stack software engineer. I've been doing this for almost a decade now and I've gone from working with Bower and AngularJS/Ember for small e-commerce sites to working on large-scale distributed systems. I'm comfortable with using AI tools as well as writing code the old fashion way. When I'm not working I enjoy writing music, watching films, photography, and hanging out with my wife and our three cats."
+  "Hi, I'm Daniel. I'm a full-stack software engineer. I've been doing this for almost a decade now and I've gone from working with Bower and AngularJS/Ember for small e-commerce sites to working on large-scale distributed systems. I'm comfortable with using AI tools as well as writing code the old fashion way. When I'm not working I enjoy writing music, watching films, photography, traveling, reading, and hanging out with my wife and our three cats."
 
 export const linkedin = 'https://www.linkedin.com/in/dandotjs' // TODO: confirm handle
 export const email = '' // TODO: confirm contact email
