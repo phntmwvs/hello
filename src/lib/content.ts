@@ -14,7 +14,7 @@ export const role = 'Full-Stack Software Engineer'
 export const location = 'Remote · USA'
 
 export const summary =
-  "Hi, I'm Daniel. I'm a full-stack software engineer who is extremely passionate about making impactful software that helps people. I stay up to date with the latest trends and best practices in the JavaScript/TypeScript world — and when I'm not building, I'm writing and listening to music, watching films, playing games, and hanging out with my wife and cats."
+  "Hi, I'm Daniel. I'm a full-stack software engineer. I've been doing this for almost a decade now and I've gone from working with Bower and AngularJS/Ember for small e-commerce sites to working on large-scale distributed systems. I'm comfortable with using AI tools as well as writing code the old fashion way. When I'm not working I enjoy writing music, watching films, photography, and hanging out with my wife and our three cats."
 
 export const linkedin = 'https://www.linkedin.com/in/dandotjs' // TODO: confirm handle
 export const email = '' // TODO: confirm contact email
@@ -27,7 +27,7 @@ export const jobs: Job[] = [
     end: 'Present',
     location: 'Remote',
     blurb:
-      'Sole developer on several greenfield Node.js microservices, currently building Guest Account Modernization features. Leading AI Adoption at UDX.',
+      'Working on both greenfield and existing Node.js microservices. I move from team to team to help projects reach the finish line on-time. Leading AI Adoption at UDX.',
     tech: ['Node.js', 'Azure Service Bus', 'Azure Event Hubs', 'Redis', 'Azure SQL DB', 'Couch DB', 'Claude Code', 'Codex', 'Copilot', 'OpenCode'],
   },
   {
@@ -38,7 +38,7 @@ export const jobs: Job[] = [
     location: 'Remote',
     blurb:
       'Full-stack work across greenfield and legacy projects. Led code reviews, pair-programmed with junior developers, and built DevOps jobs, pipelines, and deployments.',
-    tech: ['Angular', 'Spring Boot', 'Kubernetes', '.NET', 'PostgreSQL', 'RabbitMQ', 'Kafka', 'Copilot'],
+    tech: ['Angular', 'Spring Boot', 'Kubernetes', 'C#', '.NET', 'PostgreSQL', 'RabbitMQ', 'Kafka', 'Copilot'],
   },
   {
     title: 'Full-Stack Software Engineer',
@@ -48,7 +48,7 @@ export const jobs: Job[] = [
     location: 'Columbus, OH',
     blurb:
       'Architected and developed e-learning solutions for customer experiences and internal tools. Led offshore meetings and performed code reviews.',
-    tech: ['TypeScript', 'JavaScript', 'Node.js', 'Angular', 'SQL', '.NET'],
+    tech: ['TypeScript', 'JavaScript', 'Node.js', 'Angular', 'SQL', 'C#', '.NET'],
   },
   {
     title: 'Full-Stack Web Developer',

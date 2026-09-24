@@ -37,19 +37,19 @@
       <!-- the cats: all three sitting together in a row below the statement -->
       {#key cycle}
         <div class="cat-row">
-          <Parallax speed={0.05} class="cat-par cat-par-2">
+          <Parallax speed={-0.06} class="cat-par cat-par-1">
             <Reveal delay={500} y={24}>
-              <img class="cat cat-2" src="/cats/cat2.png" alt="" aria-hidden="true" />
+              <img class="cat cat-1" src="/cats/cat1.png?t={cycle}" alt="" aria-hidden="true" />
+            </Reveal>
+          </Parallax>
+          <Parallax speed={0.05} class="cat-par cat-par-2">
+            <Reveal delay={600} y={24}>
+              <img class="cat cat-2" src="/cats/cat2.png?t={cycle}" alt="" aria-hidden="true" />
             </Reveal>
           </Parallax>
           <Parallax speed={0.02} class="cat-par cat-par-3">
-            <Reveal delay={600} y={24}>
-              <img class="cat cat-3" src="/cats/cat3.png" alt="" aria-hidden="true" />
-            </Reveal>
-          </Parallax>
-          <Parallax speed={-0.06} class="cat-par cat-par-1">
             <Reveal delay={700} y={24}>
-              <img class="cat cat-1" src="/cats/cat1.png" alt="" aria-hidden="true" />
+              <img class="cat cat-3" src="/cats/cat3.png?t={cycle}" alt="" aria-hidden="true" />
             </Reveal>
           </Parallax>
         </div>

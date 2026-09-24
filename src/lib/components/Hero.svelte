@@ -79,9 +79,6 @@
     width: 100%;
   }
 
-  .hero-eyebrow {
-    margin-bottom: 2rem;
-  }
   .hero-name {
     font-size: clamp(5rem, 22vw, 18rem);
     text-transform: uppercase;
