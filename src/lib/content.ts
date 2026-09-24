@@ -28,7 +28,7 @@ export const jobs: Job[] = [
     location: 'Remote',
     blurb:
       'Working on both greenfield and existing Node.js microservices. I move from team to team to help projects reach the finish line on-time. Leading AI Adoption at UDX.',
-    tech: ['Node.js', 'Azure Service Bus', 'Azure Event Hubs', 'Redis', 'Azure SQL DB', 'Couch DB', 'Claude Code', 'Codex', 'Copilot', 'OpenCode'],
+    tech: ['Node.js', 'TypeORM', 'GraphQL', 'Azure Service Bus', 'Azure Event Hubs', 'Azure AI Foundry', 'Redis', 'Azure SQL DB', 'Couch DB', 'Snyk', 'Claude Code', 'Codex', 'Copilot', 'OpenCode'],
   },
   {
     title: 'Senior Software Engineer',
@@ -38,7 +38,7 @@ export const jobs: Job[] = [
     location: 'Remote',
     blurb:
       'Full-stack work across greenfield and legacy projects. Led code reviews, pair-programmed with junior developers, and built DevOps jobs, pipelines, and deployments.',
-    tech: ['Angular', 'Spring Boot', 'Kubernetes', 'C#', '.NET', 'PostgreSQL', 'RabbitMQ', 'Kafka', 'Copilot'],
+    tech: ['Angular', 'RxJS', 'Java', 'Spring Boot', 'Kubernetes', 'Helm', 'C#', '.NET', 'PostgreSQL', 'RabbitMQ', 'Kafka', 'Copilot'],
   },
   {
     title: 'Full-Stack Software Engineer',
