@@ -1,7 +1,7 @@
 <script lang="ts">
   import Parallax from './Parallax.svelte'
   import Reveal from './Reveal.svelte'
-  import { linkedin, email } from '../content'
+  import { linkedin, email, gh, hf } from '../content'
 
   const year = new Date().getFullYear()
 </script>
@@ -25,8 +25,25 @@
           rel="noopener noreferrer"
           aria-label="Connect with Daniel on LinkedIn"
         >
+
           Get in touch
           <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a
+          class="cta display"
+          href={gh}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Connect with Daniel on Github"
+        >
+        </a>
+        <a
+          class="cta display"
+          href={hf}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Connect with Daniel on HuggingFace"
+        >
         </a>
       </Reveal>
     </Parallax>
@@ -36,6 +53,14 @@
         <li>
           <span class="eyebrow label">LinkedIn</span>
           <a href={linkedin} target="_blank" rel="noopener noreferrer">in/dandotjs</a>
+        </li>
+        <li>
+          <span class="eyebrow label">Github</span>
+          <a href={gh} target="_blank" rel="noopener noreferrer">@phntmwvs</a>
+        </li>
+        <li>
+          <span class="eyebrow label">HuggingFace</span>
+          <a href={hf} target="_blank" rel="noopener noreferrer">@phntmwvs</a>
         </li>
         {#if email}
           <li>
@@ -47,7 +72,7 @@
     </Reveal>
 
     <div class="baseline">
-      <p class="muted">© {year} daniel g</p>
+      <p class="muted">© {year}</p>
       <a href="#top" class="eyebrow top">Back to top ↑</a>
     </div>
   </div>
