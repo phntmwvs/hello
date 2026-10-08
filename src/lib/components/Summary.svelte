@@ -100,14 +100,14 @@
     font-weight: 600;
     line-height: 1.12;
     letter-spacing: -0.02em;
-    max-width: 22ch;
+    max-width: 30ch;
     /* keep the last line clear for the grey cat to sit on */
     padding-bottom: 0.15em;
     text-wrap: balance;
   }
   @media (min-width: 64rem) {
     .statement {
-      max-width: 26ch;
+      max-width: 35ch;
     }
   }
 
